@@ -1,0 +1,112 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffdcc; /* Light yellow background */
+    color: #333; /* Dark text color for better contrast */
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+main .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - header-height); /* Adjust based on your header's height */
+    text-align: center;
+}
+
+.logo {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    margin: 200px 25px;
+}
+
+.quote {
+    max-width: 300px;
+    font-size: 20px;
+    margin: 0 200px;
+}
+
+.quote p {
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+}
+
+.quote footer {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+nav a.active {
+    color: #ffa500; /* Or any color to indicate active tab */
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.price-option {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%; /* Adjust based on your preference */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+    margin: 20px;
+}
+
+.price-option h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price-option .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffa500; /* Or any color you prefer */
+}
+
+/* You can add media queries to adjust layout on smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-option {
+        width: 80%; /* Adjust for smaller screens */
+    }
+}
