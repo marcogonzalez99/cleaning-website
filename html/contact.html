@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cleaning Service</title>
+        <link rel="stylesheet" href="/css/contact.css">
+    </head>
+<body>
+    <header>
+        <h1>Honeybee Housekeeping</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="prices.html">Prices</a>
+            <a href="contact.html"class="active">Contact</a>
+        </nav>
+    </header>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="/php/sendemail.php" method="post"> <!-- sendemail.php is your server-side script -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- Add additional fields here -->
+            <div class="form-group">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

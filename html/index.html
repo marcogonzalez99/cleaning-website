@@ -9,7 +9,9 @@
 <body>
     <header>
         <h1>Honeybee Housekeeping</h1>
-        <nav>
+        <button id="hamburger" aria-label="Open Menu">&#9776;</button> <!-- Hamburger Icon -->
+        <nav id="navbar">
+            <a href="index.html" class="active">Home</a>
             <a href="prices.html">Prices</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -25,5 +27,15 @@
             </blockquote>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var hamburger = document.getElementById('hamburger');
+            var nav = document.getElementById('navbar');
+    
+            hamburger.addEventListener('click', function() {
+                nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>    
 </body>
 </html>

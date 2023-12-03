@@ -1,0 +1,177 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    border-radius: 5%;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex; /* Use flexbox for positioning */
+    justify-content: space-between; /* Space between the elements */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+header h1 {
+    margin: 0; /* Remove bottom margin */
+    flex-grow: 1; /* Allow the title to grow and push the nav to the right */
+    text-align: center; /* Center the title text */
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation links to the end (right) */
+    align-items: center; /* Center items vertically */
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    background-color: #e7e7e7;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d7d7d7;
+}
+
+nav a.active {
+    background-color: #333;
+    color: #ffa500; /* Or any color to indicate active tab */
+    font-weight: bold;
+}
+
+.active { 
+    color: #cc473d;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap as needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Adds space between the cards */
+    padding-top: 100px; /* Adjust based on your header size */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width of the container */
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 75px;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space at the bottom of each card */
+    /* Remove width and margin from here */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.pricing-card h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600; /* Bolder for the title */
+    margin-bottom: 15px;
+}
+
+.pricing-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+}
+
+.pricing-card .price {
+    color: #e8554e;
+    font-size: 36px; /* Larger font size for price */
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.pricing-card button {
+    background-color: #ffecb3; /* Off-yellow background color */
+    color: #333; /* Dark text color for contrast */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold; /* Bolder font for button text */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 2px solid transparent; /* Prepare for hover effect */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.pricing-card button:hover {
+    background-color: #f9dca4; /* Slightly darker off-yellow on hover */
+    border-color: #e8554e; /* Add border color to match the price text */
+}
+
+/* Add this to ensure the cards have the same height */
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the button to the bottom */
+    height: 100%; /* Make sure they fill up the container */
+}
+
+.pricing-card button {
+    margin-top: auto; /* This will push the button to the bottom of the card */
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) { /* Adjust this breakpoint as needed */
+    .pricing-card {
+        width: calc(50% - 40px); /* Adjust for 2 cards in a row */
+    }
+}
+
+@media (min-width: 1024px) { /* Adjust this breakpoint as needed */
+    .pricing-card {
+        width: calc(30% - 40px); /* Adjust for 3 cards in a row */
+    }
+}
