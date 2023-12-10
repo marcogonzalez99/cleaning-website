@@ -20,23 +20,32 @@
                 <h2>Quick Clean</h2>
                 <p>Our Quick Clean service includes vacuuming, dusting, and mopping to spruce up your space in a flash.</p>
                 <div class="price">$250</div>
-                <button>Choose Quick Clean</button>
+                <button onclick="selectPackage('Quick Clean')">Choose Quick Clean</button>
+                
                 <p>Perfect for regular maintenance and light cleaning.</p>
             </div>
             <div class="pricing-card">
                 <h2>Moderate Clean</h2>
                 <p>In addition to everything in the Quick Clean, the Moderate Clean tackles bathrooms and bedroom deep cleaning.</p>
                 <div class="price">$500</div>
-                <button>Choose Moderate Clean</button>
+                <button onclick="selectPackage('Moderate Clean')">Choose Moderate Clean</button>
                 <p>Great for a more thorough cleaning that covers all the essentials.</p>
             </div>
             <div class="pricing-card">
                 <h2>Full House Deep Clean</h2>
                 <p>For the ultimate in cleanliness, our Full House Deep Clean combines all services and adds a comprehensive deep clean of your entire house.</p>
                 <div class="price">$1000</div>
-                <button>Choose Deep Clean</button>
+                <button onclick="selectPackage('Full House Deep Clean')">Choose Deep Clean</button>
                 <p>The best choice for spring cleaning or preparing for a special event.</p>
             </div>            
         </div>
+
+        <script>
+            function selectPackage(packageName) {
+                localStorage.setItem('selectedPackage', packageName);
+                window.location.href = 'contact.html'; // Redirect to the contact page
+            }
+        </script>
+        
 </body>
 </html>

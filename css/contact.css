@@ -56,38 +56,67 @@ nav a.active {
     font-weight: bold;
 }
 
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
+.contact-form-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
     padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.contact-form-container h2 {
+    text-align: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
 }
 
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 8px;
+.contact-form-container label {
+    margin: 10px 0 5px;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
-    background-color: #4CAF50;
+.contact-form-container select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.contact-form-container input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.contact-form-container button {
+    background-color: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content
 }
 
-button:hover {
-    background-color: #45a049;
+.contact-form-container button:hover {
+    background-color: #0056b3;
 }
+

@@ -175,3 +175,77 @@ button:hover {
         width: calc(30% - 40px); /* Adjust for 3 cards in a row */
     }
 }
+
+/* OTHER */
+.pricing-table-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 80px;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders so there's no space between table cells */
+    text-align: center; /* Align text to the left, you can change it as needed */
+    margin: 0 auto; /* Center the table */
+    align-items: center;
+}
+
+/* Remove all borders initially */
+.pricing-table th, 
+.pricing-table td {
+    border: none;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Add bottom border to table header cells and all but last table data cells */
+.pricing-table th, 
+.pricing-table td {
+    border-bottom: 1px solid #ddd; /* This adds horizontal lines between rows */
+}
+
+/* Add top border to the first table data cell for each row */
+.pricing-table tr:first-child td {
+    border-top: 1px solid #ddd;
+}
+
+/* Style for the header row */
+.pricing-table thead tr th {
+    background-color: #f9f9f9; /* Background color for header row */
+}
+
+/* Button Styles */
+.pricing-table button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pricing-table button:hover {
+    background-color: #0056b3;
+}
+
+/* Hide the border */
+/* .pricing-table, .pricing-table th, .pricing-table td {
+    border: none;
+} */
+
+tr {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Stack the table cells on smaller screens */
+    .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td {
+        display: block;
+        width: 100%;
+    }
+    .pricing-table thead {
+        display: none; /* Hide the headers on small screens */
+    }
+}

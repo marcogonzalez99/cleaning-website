@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cleaning Service</title>
+        <link rel="stylesheet" href="/cleaning-website/css/pricing_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="/cleaning-website/images/web-icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/cleaning-website/images/web-icon.png" type="image/x-icon">
+    </head>
+<body>
+    <header>
+        <h1>Honeybee Housekeeping</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="prices.html">Prices</a>
+            <a href="prices_test.html" class="active">Prices</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="pricing-table-container">
+        <table class="pricing-table">
+            <!-- Table Headers -->
+            <thead>
+                <tr>
+                    <th></th> <!-- First empty header for the feature names -->
+                    <th>Basic Plan</th>
+                    <th>Business Plan</th>
+                    <th>Enterprise Plan</th>
+                </tr>
+            </thead>
+            <!-- Table Body -->
+            <tbody>
+                <!-- Pricing -->
+                <tr>
+                    <td><strong>Price per Visit</strong></td>
+                    <td>$100</td>
+                    <td>$150</td>
+                    <td>$250</td>
+                </tr>
+                <!-- Bathrooms? -->
+                <tr>
+                    <td><strong>Bathrooms?</strong></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                </tr>
+                <!-- Bedrooms? -->
+                <tr>
+                    <td><strong>Bedrooms?</strong></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                </tr>
+                <!-- Kitchens? -->
+                <tr>
+                    <td><strong>Kitchen?</strong></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                </tr>
+                <!-- Dining Rooms? -->
+                <tr>
+                    <td><strong>Dining Room?<strong></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                </tr>
+                <!-- Living Rooms? -->
+                <tr>
+                    <td><strong>Living Room?</strong></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                </tr>
+                <!-- Walls? -->
+                <tr>
+                    <td><strong>Walls Scrubbed?</strong></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                </tr>
+                <!-- Pet Hair Cleaned? -->
+                <tr>
+                    <td><strong>Pet Hair Removed?</strong></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-xmark"></i></td>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                </tr>
+                <!-- Action Buttons -->
+                <tr>
+                    <td></td> <!-- Empty cell for alignment -->
+                    <td><button onclick="selectPackage('Basic Clean')">Choose Basic Clean</button></td>
+                    <td><button onclick="selectPackage('Moderate Clean')">Choose Moderate Clean</button></td>
+                    <td><button onclick="selectPackage('Full House Deep Clean')">Choose Deep Clean</button></td>
+                </tr>                
+                <!-- Additional rows for more features -->
+                <!-- ... -->
+            </tbody>
+        </table>
+    </div>
+        <script>
+            function selectPackage(packageName) {
+                localStorage.setItem('selectedPackage', packageName);
+                window.location.href = 'contact.html'; // Redirect to the contact page
+            }
+        </script>
+        
+</body>
+</html>
