@@ -181,38 +181,20 @@ button:hover {
     width: 100%;
     text-align: center;
     margin: 20px 0;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .pricing-table {
-    width: 100%;
-    border-collapse: collapse; /* Collapse borders so there's no space between table cells */
-    text-align: center; /* Align text to the left, you can change it as needed */
-    margin: 0 auto; /* Center the table */
-    align-items: center;
+    width: 90vw;     /* 90% of the viewport width */
+    height: 85vh;    /* 80% of the viewport height */
+    margin: auto;    /* Center the table on the page */
+    
 }
 
-/* Remove all borders initially */
 .pricing-table th, 
 .pricing-table td {
-    border: none;
-    padding: 10px; /* Adjust padding as needed */
-}
-
-/* Add bottom border to table header cells and all but last table data cells */
-.pricing-table th, 
-.pricing-table td {
-    border-bottom: 1px solid #ddd; /* This adds horizontal lines between rows */
-}
-
-/* Add top border to the first table data cell for each row */
-.pricing-table tr:first-child td {
-    border-top: 1px solid #ddd;
-}
-
-/* Style for the header row */
-.pricing-table thead tr th {
-    background-color: #f9f9f9; /* Background color for header row */
+    text-align: center;
+    padding: 5px;
 }
 
 /* Button Styles */
@@ -230,14 +212,14 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Hide the border */
-/* .pricing-table, .pricing-table th, .pricing-table td {
-    border: none;
-} */
-
-tr {
-    margin-bottom: 10px;
+.pricing-table thead tr th {
+    border-bottom: none; /* Remove the bottom border from the header row */
 }
+
+.pricing-table tbody tr {
+    border-bottom: 1px solid blue; /* Horizontal line between rows in the body */
+}
+
 
 @media screen and (max-width: 768px) {
     /* Stack the table cells on smaller screens */

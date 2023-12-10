@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cleaning Service</title>
-        <link rel="stylesheet" href="/cleaning-website/css/pricing_style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="icon" href="/cleaning-website/images/web-icon.png" type="image/x-icon">
-        <link rel="shortcut icon" href="/cleaning-website/images/web-icon.png" type="image/x-icon">
+        <link rel="icon" href="images/web-icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/web-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/pricing_style.css">
     </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
             <!-- Table Headers -->
             <thead>
                 <tr>
-                    <th></th> <!-- First empty header for the feature names -->
+                    <td class="hidden-cell"></td> <!-- Empty cell for alignment -->
                     <th>Basic Plan</th>
                     <th>Business Plan</th>
                     <th>Enterprise Plan</th>
@@ -90,7 +90,7 @@
                 </tr>
                 <!-- Action Buttons -->
                 <tr>
-                    <td></td> <!-- Empty cell for alignment -->
+                    <td class="hidden-cell"></td> <!-- Empty cell for alignment -->
                     <td><button onclick="selectPackage('Basic Clean')">Choose Basic Clean</button></td>
                     <td><button onclick="selectPackage('Moderate Clean')">Choose Moderate Clean</button></td>
                     <td><button onclick="selectPackage('Full House Deep Clean')">Choose Deep Clean</button></td>
